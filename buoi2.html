@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Buoi 2</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/my-style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-lg-6">
+				<div class="alert alert-danger">Nội dung đã cập nhật!</div>
+				<div class="alert alert-success">Nội dung
+					<b>werer </b>đã cập nhật!</div>
+				<div class="alert alert-secondary">Nội dung
+					<a href="https://khoapham.vn/" class="alert-link">asdfghjk </a> đã cập nhật!</div>
+			</div>
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="col-lg-6">
+				<div class="alert alert-danger">
+					<h4 class="alert-heading">Messages!</h4>
+					<p class="justify-content-huong">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+						cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-md-center">
+			<div class="col-lg-6">
+				<div id="my-alert" class="alert alert-danger alert-dismissible fade" role="alert">
+					Nội dung đã cập nhật!
+					<span class="close" data-dismiss="alert" aria-hidden="true">&times;</span>
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<button class="btn btn-primary">Click Me!</button>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			var dem = 1;
+			$('button').click(function(){
+				//$('#my-alert').alert('close'); //đóng
+				
+				if(dem%2==0){
+					$('#my-alert').removeClass('show')
+					$('#my-alert').addClass('hide');
+				}
+				else $('#my-alert').addClass('show')
+
+				dem++;
+			})
+		})
+	</script>
+</body>
+
+</html>
