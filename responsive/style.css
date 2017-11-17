@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3f3
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    display:  block
+}
+.sanpham{
+    background-color: #fff;
+    float: left;
+    width: 380px;
+    margin: 20px 10px 0;
+    padding-bottom: 20px;
+    padding-top: 10px
+}
+.hinh{
+    width: 50%;
+    float: left;
+}
+.hinh img{
+    width: 98%;
+    padding: 1%
+}
+.mota{
+    width: 47%;
+    float: left;
+    padding-left: 3%
+}
+.tensp, .giasp{
+    width: 100%;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 10px 20px 0;
+    text-transform: uppercase
+}
+.tensp{
+    color: red;
+    clear: both
+}
