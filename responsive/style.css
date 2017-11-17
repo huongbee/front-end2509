@@ -41,3 +41,17 @@ body{
     color: red;
     clear: both
 }
+
+@media (max-width:900px){
+    .container{
+        width: 880px;
+    }
+    .sanpham{
+        width: 29.3333333333333%;
+        margin: 20px 2% 0;
+    }
+    .tensp, .giasp{
+        padding: 0
+    }
+    
+}
